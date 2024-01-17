@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/cotton/cotton-square.png
+image: img/sciolymentor.jpg
 title: "Science Olympiad Mentoring"
 date: 2023
 published: true
