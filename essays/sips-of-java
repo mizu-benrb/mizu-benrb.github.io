@@ -1,0 +1,22 @@
+---
+layout: essay
+type: essay
+title: "My First Few Sips of Java(Script)"
+# All dates must be YYYY-MM-DD format!
+date: 2024-01-16
+published: true
+labels:
+  - JavaScript
+  - Software Engineering
+---
+
+<img width="200px" class="rounded float-start pe-4" src="../img/difficulty/degree_difficulty.jpg">
+
+*My first thimbleful of JavaScript was, to say the least, not the greatest first impression to have.*
+
+Long before I took my first step on Manoa, my first introduction to JavaScript was in a middle school technology class, during a web development section. We had learned HTML and CSS, and with that knowledge, tasked to create a basic website with that knowledge. I had little problems setting up this basic page with the HTML and CSS skills I had learned. Confident, I looked over to my neighbor, just to see that they were trying to implement a fancy widget on their page: an image carousel with 4 different images and cool buttons to navigate through them! Curious, I asked where they got it from, and I quickly tried to implement it myself. I failed. I didn't understand the arcane workings of the weird language the carousel was coded with. It had weird words and even stranger symbols. What were all these parantheses doing? What is a "function"? Why were there semicolons everywhere? I was put off from learning anything further, and thus, I didn't... until now!
+
+## The "Taste" of JavaScript
+
+
+ 
