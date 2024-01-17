@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/micromouse/micromouse-square.jpg
+image: img/towers-of-enoi.png
 title: "Towers of Enoi"
 date: 2023
 published: true
