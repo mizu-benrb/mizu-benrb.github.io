@@ -12,7 +12,7 @@ labels:
   - Computer Graphics
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/sips-of-java.jpg">
+<img width="700px" class="rounded float-start pe-4" src="../img/art-experiences.jpg">
 
 ## Born an artist... or perhaps a programmer?
 
