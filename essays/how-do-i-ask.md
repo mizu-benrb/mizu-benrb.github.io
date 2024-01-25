@@ -21,104 +21,24 @@ This does not carry over to online forums for software engineering. Online, ques
 
 # The Dumb
 
-The following example of a stupid question comes from [this Stack Overflow question](https://stackoverflow.com/questions/77882598/error-the-name-gridview1-does-not-exist-in-the-current-context). The question goes as follows:
+The following example of a stupid question comes from [this Stack Overflow question](https://stackoverflow.com/questions/77882598/error-the-name-gridview1-does-not-exist-in-the-current-context). The question regards an issue the user is experiencing with C# and how he can use it to extract data from a mySQL database. It goes as follows:
 
 ```
 I am learning how to retrieve data from mysql database using c# webforms
 
 this is default.aspx.cs
 
-using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Web.UI.WebControls;
-
-
-    public partial class _Default : System.Web.UI.Page
-{
-
-
-        protected void Page_Load(object sender, EventArgs e)
-    {
-        if (!IsPostBack)
-        {
-            BindData();
-        }
-    }
-
-private void BindData()
-{
-    List<Student> students = new List<Student>();
-
-    string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
-
-    using (SqlConnection connection = new SqlConnection(connectionString))
-    {
-        string query = "SELECT Id, FirstName, LastName, Age, Course FROM AllStudents";
-        using (SqlCommand command = new SqlCommand(query, connection))
-        {
-            connection.Open();
-            using (SqlDataReader reader = command.ExecuteReader())
-            {
-                while (reader.Read())
-                {
-                    Student student = new Student
-                    {
-                        Id = Convert.ToInt32(reader["Id"]),
-                        FirstName = reader["FirstName"].ToString(),
-                        LastName = reader["LastName"].ToString(),
-                        Age = Convert.ToInt32(reader["Age"]),
-                        Course = reader["Course"].ToString()
-                    };
-                    students.Add(student);
-                }
-            }
-        }
-    }
-
-    GridView1.DataSource = students;
-    GridView1.DataBind();
-}
-}
-
-
-public class Student
-{
-    public int Id { get; set; }
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public int Age { get; set; }
-    public string Course { get; set; }
-}
+* A lot of code *
 
 and default.aspx file:
 
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Student Data</title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
-                <Columns>
-                    <asp:BoundField DataField="Id" HeaderText="ID" />
-                    <asp:BoundField DataField="FirstName" HeaderText="FirstName" />
-                    <asp:BoundField DataField="LastName" HeaderText="LastName" />
-                    <asp:BoundField DataField="Age" HeaderText="Age" />
-                    <asp:BoundField DataField="Course" HeaderText="Course" />
-                </Columns>
-            </asp:GridView>
-        </div>
-    </form>
-</body>
-</html>
+* Also a lot of code *
 
 How to solve the error 'The name 'GridView1' does not exist in the current context'?
 
 unfortunately after providing full detail I still cant post the question due to 'It looks like your post is mostly code; please add some more details.' so excuse me for including this paragraph
 ```
+
+This question, even though I barely know anything about C# webforms and mySQL, was frustrating to look at. The user did not seem to conduct research on how to solve his question. They simply included the entirety of two of their source code files with no comments or anything to really guide the reader, and an error message. Their goal is stated, although may be perceived as too vague and general. In addition, their last paragraph is, by their admission, only there to fill space, and gives the reader no additional details on the problem. It seems to be a question asked in haste, and thus, is a "stupid" question.
+
+# The Smart
