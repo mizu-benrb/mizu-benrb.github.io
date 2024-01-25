@@ -68,3 +68,7 @@ Running in VS2022 17.8.5 on Windows 11.
 ```
 
 This question is very neatly formatted, with no spelling errors and decent grammar. The user gives us details about their environment in case it contributed to the error, which given it is an occasional error, might be a factor. The code, which has been omitted here for brevity, is tidy and, while it could use more comments, is readable. They state their goal and intentions with this code, as well as some examples of intended behavior. Finally, they offer some courtesy at the end. While there is not too much evidence of previous searching up, the fact the question is so cleanly formatted makes me lean towards this being a "smart" question.
+
+# Conclusions
+
+
