@@ -13,18 +13,112 @@ labels:
 
 <img width="300px" class="rounded float-start pe-4" src="../img/sips-of-java.jpg">
 
-*My first thimbleful of JavaScript was, to say the least, not the greatest first impression to have.*
+# The Problem of Questions
 
-Long before I took my first step on Manoa, my first introduction to JavaScript was in a middle school technology class, during the web development section. We had learned HTML and CSS, and with that knowledge, were tasked with creating a basic website. I had little problems setting up this basic page with the skills I had learned. Confident, I looked over to my neighbor, just to see that they were trying to implement a fancy widget on their page: an image carousel with 4 different pictures and cool buttons to navigate through them! Curious, I asked where they got it from, and I quickly tried to implement it myself. I failed. I did not understand the arcane workings of the weird language the carousel was coded with. It had weird words and even stranger symbols. What is a "function"? What were all these parantheses doing? Why was there a semicolon at the end of every line? I was put off from learning anything further, and thus, I did not... until now!
+An experience that is far too common in classrooms today is that of the vacuum-like silence that immediately fills the space after the teacher says "Any questions?" I have been on both ends of this, and it is not fun, especially when you can very clearly the confusion and uncertainty painted on the students' faces. There are so many questions that are waiting to be asked! Yet, students hold off on asking, usually because most of those questions are nascent, barely conceptualized feelings of confusion, but also because students may perceive their questions to be too "stupid." Now, in a classroom environment, I hold the belief that these "stupid" questions should be asked. After all, in person, such questions can be really funny! Subsequently, even if the answer is quite obvious or plain, it can encite further discussion and encourage those with "smart" questions to formalize their question's wording and actually ask.
 
-## The "Taste" of JavaScript
+This does not carry over to online forums for software engineering. Online, questions are often viewed in a vacuum and do not inspire a continuing discussion like they would in a classroom environment. Furthermore, the marketplace of questions is teeming with dumb questions that can either be solved with a good search on Google or are so incoherent or vague that it would take a miracle for an online stranger to be able to find out what is being asked. In effect, a question must be sold and packaged as a "smart" question in order to attract the interest of "consumers," or online experts, so that they can give you help. So how do we phrase our questions to be "smart?" What qualifies as a "stupid" question?
 
-Having learned 4 other languages in previous ICS classes (Python, C, C++, Java), I was much more well equipped to learn JavaScript then I was 7 years ago. However, I have also acquired my own "tastes," or biases, for what a programming language should feel like to write. I have gotten used to solving problems using classes and all the syntactic tendencies of object-oriented programming. So, how does JavaScript stack up? 
+# The Dumb
 
-It is... strange. JavaScript is supposedly an object-oriented language like C and Java, but it felt like Python writing it! The classes and strong typing of C and Java were gone, and instead, I have been writing arrow functions and "let"ting these variables be whatever! Objects still exist, but they feel a lot looser than I have been used to when programming in C. I am also still not quite used to only having to use let and const for variables instead of typing them, despite my previous experience with Python. I will say, some of the functionalities of JavaScript, including the spread operator and arrow functions discussed in ES6, are quite interesting and useful in certain cases. In general, I felt a lot more agile solving problems in JavaScript as opposed to the previous 4 languages I have learned. Thus, I think JavaScript is a good language for software engineering insofar as it enables quicker, or atleast more compact, programming. Whether this impression lasts into more advanced problems and eventual fully functioned projects, I am unsure and I look forward to seeing how our use of JavaScript will evolve.
- 
-## Daily Cup of Code
+The following example of a stupid question comes from [this Stack Overflow question](https://stackoverflow.com/questions/77882598/error-the-name-gridview1-does-not-exist-in-the-current-context). The question goes as follows:
 
-Last semester, I took ICS 212 asynchronously at Leeward Community College. It was probably the least I have learnt in an ICS class so far. I often packaged entire weeks of content into 1-2 days as I worked on the weekly assignments. It made it hard to digest any of the content, and even though I could complete the assignments, I did not really feel like I was absorbing much of anything. This is more of an indictment of my ability to direct my own learning, though, which is still underdeveloped. 
+```
+I am learning how to retrieve data from mysql database using c# webforms
 
-Athletic software engineering has helped me address this weakness head-on by forcing me to work everyday on something from the class. It is certainly stressful, resulting in probably the most rigorous course I have ever taken, but having to do something daily has made me develop my work ethic and my skills at a really quick pace. In only 3 days, I learned the basic syntax for an entirely new programming language, which is not something I've done before. Of course, just learning the syntax is not nearly enough to attain mastery, and that is exactly what the WODs (Workout of the Day) do. They make us recall our knowledge of the capabilities of JavaScript and apply them to actual problems, doing so from relative scratch. I am used to time-limited tests, coming from a competitive background, so a part of me enjoys the WODs, although the part of me that blanks out and worries about grading does not enjoy the WODs. Overall, however, I think this style of learning will work for me. After all, you never want to chug a cup of coffee all at once; it is best to take it one sip at a time.
+this is default.aspx.cs
+
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Web.UI.WebControls;
+
+
+    public partial class _Default : System.Web.UI.Page
+{
+
+
+        protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            BindData();
+        }
+    }
+
+private void BindData()
+{
+    List<Student> students = new List<Student>();
+
+    string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+
+    using (SqlConnection connection = new SqlConnection(connectionString))
+    {
+        string query = "SELECT Id, FirstName, LastName, Age, Course FROM AllStudents";
+        using (SqlCommand command = new SqlCommand(query, connection))
+        {
+            connection.Open();
+            using (SqlDataReader reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    Student student = new Student
+                    {
+                        Id = Convert.ToInt32(reader["Id"]),
+                        FirstName = reader["FirstName"].ToString(),
+                        LastName = reader["LastName"].ToString(),
+                        Age = Convert.ToInt32(reader["Age"]),
+                        Course = reader["Course"].ToString()
+                    };
+                    students.Add(student);
+                }
+            }
+        }
+    }
+
+    GridView1.DataSource = students;
+    GridView1.DataBind();
+}
+}
+
+
+public class Student
+{
+    public int Id { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public int Age { get; set; }
+    public string Course { get; set; }
+}
+
+and default.aspx file:
+
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Student Data</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+                <Columns>
+                    <asp:BoundField DataField="Id" HeaderText="ID" />
+                    <asp:BoundField DataField="FirstName" HeaderText="FirstName" />
+                    <asp:BoundField DataField="LastName" HeaderText="LastName" />
+                    <asp:BoundField DataField="Age" HeaderText="Age" />
+                    <asp:BoundField DataField="Course" HeaderText="Course" />
+                </Columns>
+            </asp:GridView>
+        </div>
+    </form>
+</body>
+</html>
+
+How to solve the error 'The name 'GridView1' does not exist in the current context'?
+
+unfortunately after providing full detail I still cant post the question due to 'It looks like your post is mostly code; please add some more details.' so excuse me for including this paragraph
+```
