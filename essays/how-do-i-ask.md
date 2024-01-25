@@ -42,3 +42,29 @@ unfortunately after providing full detail I still cant post the question due to 
 This question, even though I barely know anything about C# webforms and mySQL, was frustrating to look at. The user did not seem to conduct research on how to solve his question. They simply included the entirety of two of their source code files with no comments or anything to really guide the reader, and an error message. Their goal is stated, although may be perceived as too vague and general. In addition, their last paragraph is, by their admission, only there to fill space, and gives the reader no additional details on the problem. It seems to be a question asked in haste, and thus, is a "stupid" question.
 
 # The Smart
+
+The following example of a smart question comes from [this Stack Overflow question](https://stackoverflow.com/questions/77879103/blockingcollectiont-throws-unexpected-invalidoperationexception) regarding a user's inquiry about implementing a queue using a specific C# class. It goes as follows:
+
+```
+
+I was trying out BlockingCollection<T> (as a Queue) in .NET8 and sometimes I end up with the exception:
+
+"System.InvalidOperationException: The collection argument is empty and has been marked as complete with regards to additions."
+
+Code example:
+
+    * lots of code *
+
+IsCompleted states "Whether this collection has been marked as complete for adding and is empty."
+
+So as long as CompleteAdding() has not been called Take() should be blocking and when CompleteAdding() has been called and the queue is empty, " !queue.IsCompleted " should return false.
+
+What am I missing?
+
+Any help would be very much appreciated.
+
+Running in VS2022 17.8.5 on Windows 11.
+
+```
+
+This question is very neatly formatted, with no spelling errors and decent grammar. The user gives us details about their environment in case it contributed to the error, which given it is an occasional error, might be a factor. The code, which has been omitted here for brevity, is tidy and, while it could use more comments, is readable. They state their goal and intentions with this code, as well as some examples of intended behavior. Finally, they offer some courtesy at the end. While there is not too much evidence of previous searching up, the fact the question is so cleanly formatted makes me lean towards this being a "smart" question.
