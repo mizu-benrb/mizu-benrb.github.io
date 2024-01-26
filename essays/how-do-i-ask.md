@@ -11,7 +11,7 @@ labels:
   - Stack Overflow
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/sips-of-java.jpg">
+<img width="300px" class="rounded float-start pe-4" src="../img/how-do-i-ask.jpg">
 
 # The Problem of Questions
 
@@ -21,7 +21,7 @@ This does not carry over to online forums for software engineering. Online, ques
 
 # The Dumb
 
-The following example of a stupid question comes from [this Stack Overflow question](https://stackoverflow.com/questions/77882598/error-the-name-gridview1-does-not-exist-in-the-current-context). The question regards an issue the user is experiencing with C# and how he can use it to extract data from a mySQL database. It goes as follows:
+The following example of a stupid question comes from [this Stack Overflow question](https://stackoverflow.com/questions/77882598/error-the-name-gridview1-does-not-exist-in-the-current-context). The question regards an issue the user is experiencing with C# and how he can use C# Web Forms to extract data from a mySQL database. It goes as follows:
 
 ```
 I am learning how to retrieve data from mysql database using c# webforms
@@ -69,6 +69,6 @@ Running in VS2022 17.8.5 on Windows 11.
 
 This question is very neatly formatted, with no spelling errors and decent grammar. The user gives us details about their environment in case it contributed to the error, which given it is an occasional error, might be a factor. The code, which has been omitted here for brevity, is tidy and, while it could use more comments, is readable. They state their goal and intentions with this code, as well as some examples of intended behavior. Finally, they offer some courtesy at the end. While there is not too much evidence of previous searching up, the fact the question is so cleanly formatted makes me lean towards this being a "smart" question.
 
-# Conclusions
+# Conclusion
 
-
+Learning something is often a difficult journey with many bumps along the way. Questions are a key part of this journey, and if answered properly, will clear the way for progress. However, if a question is "stupid" and not worded properly, the answers given can be at best non-existent (as the people who know will not answer) and at worst derail one's journey. Thus, we should aspire to create smart questions, questions that we can sell to the knowledgable so that they can pay us and those in the future with knowledge. Yet, we should not hinder our curiosity and hold back a question even if it might be a little stupid. If we all got stuck on the question of "How should I ask this?," we would never ask any questions. And that silence would truly be deafening.
