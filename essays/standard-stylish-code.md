@@ -11,7 +11,7 @@ labels:
   - Coding Standards
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/art-experiences.jpg">
+<img width="200px" class="rounded float-start pe-4" src="../img/standard-stylish-code.png">
 
 ## Enforcing a Style of Code
 
