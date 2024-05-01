@@ -11,6 +11,8 @@ labels:
   - ChatGPT
 ---
 
+<img width="300px" class="rounded float-start pe-4" src="../img/usefulness-of-ai.jpg">
+
 ### I. Introduction
 In the past half-decade, AI has gone through a massive revolution in both capability and perception by the public. This is thanks to both the culmination of years of research in the field and the increasing proliferation of powerful AI processors via Nvidia's gaming GPUs. Subsequently, it's seen significant use in education, where students are using it for many writing-related tasks, sometimes allowed and many times not. For us software engineering students, it is particularly pertinent because of AI's promise in coding, and how quickly and accurately it can identify many of the constructs in nearly every programming language. For my part, that's the aspect of AI I've explored the most, along with image generation (mostly for fun). So, for software engineering in UH Manoa's ICS 314 class, how much did I use it?
 
