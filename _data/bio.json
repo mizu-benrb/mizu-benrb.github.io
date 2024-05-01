@@ -23,35 +23,42 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Python", "C#" ]
+      "keywords": [ "C", "C++", "Java", "Javascript", "Python", "C#", "Meteor", "React", "Bootstrap" ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "Windows", "Ubuntu", "Git/GitHub", "g++" ]
+      "keywords": [ "Windows", "Ubuntu", "Git/GitHub", "g++", "Unreal Engine" ]
     }
   ],
   "education": [
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2026)",
+      "area": "Computer Science, Creative Computational Media (expected Spring, 2026)",
       "studyType": "B.S.",
       "startDate": "2022-09-01",
       "endDate": "Present",
-      "courses": [
-      ]
+      "courses": [ "Calculus 1 & 2", "Linear Algebra", "Algorithms", "Software Engineering", "3D Computer Animation", "Philosophy" ]
     }
   ],
   "volunteer": [
     {
       "organization": "Highlands Intermediate School Science Club",
       "website": "https://www.highlands.k12.hi.us/",
-      "position": "Mentor",
+      "position": "Coach/Mentor",
       "startDate": "2019-09-01",
       "endDate": "Present",
-      "summary": "Mentor and test writer for space science events.",
+      "summary": "Main coach for space science events. Mentored for cyber security, embedded-computing (Arduino, TI) related activities",
       "highlights": [
         "Developed students into regular contenders for best in state, nation"
       ]
+    },
+    {
+      "organization": "Hawaii Science Olympiad",
+      "website": "https://www.hsso.org/",
+      "position": "Test Proctor",
+      "startDate": "2022",
+      "endDate": "Present",
+      "summary": "Designed and administered tests for student competitors, including material preparation and test correction. Contributed to organization of invitational-level tournaments."
     }
   ],
   "awards": [
