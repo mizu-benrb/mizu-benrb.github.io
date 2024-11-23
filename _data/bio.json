@@ -6,7 +6,7 @@
     "email": "bbercasi@hawaii.edu",
     "phone": "N/A",
     "website": "https://mizu-benrb.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. Specifically, I am in the Creative Computational Media track of Computer Science. I expect to graduate in Spring, 2026.",
+    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii under the Creative Computational Media track of Computer Science. I expect to graduate in Spring, 2026.",
     "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
       { "network": "github", "username": "mizu-benrb", "url": "http://github.com/mizu-benrb" },
@@ -23,11 +23,11 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Python", "C#", "Meteor", "React", "Bootstrap" ]
+      "keywords": [ "C", "C++", "Java", "Javascript", "Python", "C#", "Meteor", "React", "Bootstrap", "Common Lisp", "SQL" ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "Windows", "Ubuntu", "Git/GitHub", "g++", "Unreal Engine" ]
+      "keywords": [ "Windows", "Ubuntu", "Git/GitHub", "g++", "Unreal Engine", "Emacs" ]
     }
   ],
   "education": [
@@ -37,7 +37,7 @@
       "studyType": "B.S.",
       "startDate": "2022-09-01",
       "endDate": "Present",
-      "courses": [ "Calculus 1 & 2", "Linear Algebra", "Algorithms", "Software Engineering", "3D Computer Animation", "Philosophy" ]
+      "courses": [ "Calculus 1 & 2", "Linear Algebra", "Algorithms", "Software Engineering", "3D Computer Animation", "Philosophy", "Computer Graphics", "Database Systems" ]
     }
   ],
   "volunteer": [
@@ -46,7 +46,7 @@
       "website": "https://www.highlands.k12.hi.us/",
       "position": "Coach/Mentor",
       "startDate": "2019-09-01",
-      "endDate": "Present",
+      "endDate": "2024",
       "summary": "Main coach for space science events. Mentored for cyber security, embedded-computing (Arduino, TI) related activities",
       "highlights": [
         "Developed students into regular contenders for best in state, nation"
